@@ -1,0 +1,15 @@
+<section class="container-fluid">
+<div class="row">
+<div  class="col-md-2 gy-3 my-3" *ngFor="let data of moviData">
+    <div   class="card shadow">
+      <img class="card-img-top" [src]="'https://image.tmdb.org/t/p/w500'+data.poster_path" alt="Title" />
+      <div class="card-body">
+        <h5 class="h6 fw-bold"> <span class="fw-normal">{{data.title}}</span> </h5>
+        <h6 class="card-title fw-bold">Popularity : <span class="fw-normal">{{data.popularity}}</span></h6>
+        <p class="card-text fw-bold">Averae: <span class="fw-normal">{{data.vote_average}}</span> <i class="fa-solid fa-star text-main"></i></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>

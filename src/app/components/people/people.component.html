@@ -1,0 +1,15 @@
+<section class="container">
+    <div class="row gy-3 my-3">
+      <div class="col-md-3" *ngFor="let data of peopleData">
+<div *ngIf="data.profile_path !== null" class="card shadow">
+  <img  class="card-img-top" [src]="'https://image.tmdb.org/t/p/w500'+data.profile_path" [alt]="data.name" />
+  <div class="card-body">
+    <h4 class="card-title">{{data.name}}</h4>
+    <p class="card-text fw-bold">Department : <span class="fw-normal">{{data.known_for_department}}</span></p>
+    <p class="card-text fw-bold">popularity : <span class="fw-normal">{{data.popularity}}</span></p>
+  </div>
+</div>
+
+      </div>
+    </div>
+</section>

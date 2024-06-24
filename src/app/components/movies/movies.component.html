@@ -1,0 +1,15 @@
+<section class="container ">
+  <div class="row gy-4 my-3">
+    <div class="col-md-3" *ngFor="let data of moviesData">
+      <div class="card shadow">
+        <img height="400" class="card-img-top" [src]="'https://image.tmdb.org/t/p/w500'+data.poster_path" alt="Title" />
+        <div class="card-body">
+          <h4 class="card-title h6">{{data.original_name}}</h4>
+          <h4 class="card-title h6">{{data.title}}</h4>
+          <p class="card-text">Vote Count : <span class="mainColor fw-bold">{{data.vote_count}}</span></p>
+        </div>
+       </div>
+    </div>
+  </div>
+
+</section>

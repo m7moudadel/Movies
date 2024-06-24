@@ -1,0 +1,20 @@
+<section>
+<div class="container">
+  <div class="row gy-2 my-3" *ngFor="let data of dataTv">
+
+    <div class="col-md-3">
+        <div>
+          <img class="w-100  rounded shadow" [src]="'https://image.tmdb.org/t/p/w500'+data.poster_path" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-9 position-relative">
+<div >
+  <h1>{{data.original_name}}</h1>
+  <p >{{data.overview}}</p>
+   <h2 class="position-absolute bottom-0">  popularity: <span class="fs-3">{{data.popularity}}</span></h2>
+
+</div>      </div>
+  </div>
+</div>
+</section>

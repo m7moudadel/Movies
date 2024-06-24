@@ -1,0 +1,50 @@
+<section>
+  <nav
+    class="navbar navbar-expand-sm bg fixed-top"
+  >
+    <div class="container">
+      <a class="navbar-brand text-light fst-italic fw-bolder" routerLink="/home">Movies</a>
+      <button
+        class="navbar-toggler d-lg-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-light"  routerLink="/home" aria-current="page"
+              >All
+              <span class="visually-hidden">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" routerLink="/movies">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" routerLink="/people">Pepole</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" routerLink="/tv">Tv</a>
+          </li>
+
+        </ul>
+
+        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a role="button" (click)="logout()" class="nav-link active text-light"  routerLink="/login" aria-current="page"
+              >Logout
+              <span class="visually-hidden">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</section>
